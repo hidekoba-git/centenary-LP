@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>「社長の右腕」として工期とコストに革新を | 株式会社CENTENARY</title>
+    <!-- Tailwind CSS を読み込み -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts を読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome (アイコン用) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        body {
+            /* フォントを指定 */
+            font-family: 'Noto Sans JP', 'Inter', sans-serif;
+        }
+        .hero-bg {
+            /* ヒーローセクションの背景画像 */
+            /* ↓↓↓ お客様のローカル画像パスに書き換えてください ↓↓↓ */
+            background-image: url('images/hero-bg.jpg');
+            background-size: cover;
+            /* 画像の表示位置を調整して天井部分を見せる */
+            background-position: center 30%;
+        }
+        .service-bg {
+            /* サービスセクションの背景画像 */
+            /* ↓↓↓ お客様のローカル画像パスに書き換えてください ↓↓↓ */
+            background-image: linear-gradient(rgba(249, 250, 251, 0.9), rgba(249, 250, 251, 0.9)), url('images/service-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            /* スクロール時に背景画像を固定する（パララックス効果） */
+            background-attachment: fixed;
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        /* スクロール時のフェードインアニメーション */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- ヘッダー -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl md:text-2xl font-bold text-gray-800">株式会社CENTENARY</h1>
+            <a href="#contact" class="bg-blue-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300">お問い合わせ</a>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main>
+        <!-- ヒーローセクション -->
+        <section class="hero-bg text-white">
+            <div class="bg-black bg-opacity-60 min-h-[50vh] flex flex-col justify-center">
+                <div class="container mx-auto px-6 py-12 md:py-24">
+                    <h2 class="text-3xl md:text-4xl font-black mb-6 leading-normal text-left">「社長の右腕」として、工期とコストに革新を。</h2>
+                    <p class="text-lg md:text-xl max-w-4xl text-left">私たちは単なる下請けではなく、ビジョンを共有し、未来を共に築くパートナーです。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ストーリーセクション -->
+        <section class="py-16 md:py-24 bg-white fade-in">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2">
+                        <img src="https://placehold.co/600x800/e2e8f0/334155?text=Vision" alt="ビジョン" class="rounded-lg shadow-xl w-full">
+                    </div>
+                    <div class="md:w-1/2">
+                        <div class="text-lg leading-relaxed text-gray-700 space-y-6">
+                            <p>「また業者とのやりとりで半日潰れた…」</p>
+                            <p>「もっと踏み込んだ提案をしてくれる業者はいないか…」</p>
+                            <p>「この複雑なプロジェクト、誰に任せればいいんだ…」</p>
+                            <p class="mt-8">業者との調整業務に貴重な時間を奪われ、本来注力すべき経営戦略や事業成長に集中できない。そんなもどかしさを抱えていませんか？</p>
+                            <p>私たちは、そんな社長にとっての「右腕」でありたいと思っています。面倒な打ち合わせ、複雑な資料作成、専門家との連携。それらを私たちが一手に引き受け、貴社が本来のコア業務に集中できる環境を創出します。</p>
+                            <p>ただコストを下げるだけではありません。専門家としての知見と実行力で、プロジェクト全体の「生産性」と「収益性」を向上させるのです。</p>
+                             <p>私たちが目指すのは、単なる工事の完成ではありません。その先にいるお客様の「快適」まで私たちが設計し、貴社のプロジェクトに安心と利益、そして期待を超える感動をもたらすことです。</p>
+                            <p>もし貴社が「業者とのやりとりに疲弊している」「もっと踏み込んだ提案が欲しい」「複雑なプロジェクトの舵取り役を探している」そう感じているなら、ぜひ一度、貴社の現状をお聞かせください。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- こんなお悩み、ありませんか？ -->
+        <section class="py-16 md:py-24 bg-gray-50 fade-in">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h3 class="text-2xl md:text-3xl font-bold mb-4">こんなお悩み、ありませんか？</h3>
+                    <p class="text-gray-600">これらの課題、全て解決できます。</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                        <i class="fas fa-users-cog text-4xl text-blue-500 mb-4"></i>
+                        <h4 class="font-bold text-xl text-blue-600 mb-3">リソース不足</h4>
+                        <ul class="list-disc list-outside pl-5 text-gray-700 space-y-2 text-left">
+                            <li>複数業者の調整に時間を取られている</li>
+                            <li>信頼できる施工管理者が不足している</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                        <i class="fas fa-brain text-4xl text-blue-500 mb-4"></i>
+                        <h4 class="font-bold text-xl text-blue-600 mb-3">専門性の課題</h4>
+                        <ul class="list-disc list-outside pl-5 text-gray-700 space-y-2 text-left">
+                            <li>専門的な判断に不安がある</li>
+                            <li>最新の工法や商材の知識が追いつかない</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                        <i class="fas fa-balance-scale text-4xl text-blue-500 mb-4"></i>
+                        <h4 class="font-bold text-xl text-blue-600 mb-3">コストと品質</h4>
+                        <ul class="list-disc list-outside pl-5 text-gray-700 space-y-2 text-left">
+                            <li>品質を担保しつつコストを最適化したい</li>
+                            <li>急な仕様変更への対応が難しい</li>
+                        </ul>
+                    </div>
+                </div>
+                 <div class="text-center mt-12">
+                    <p class="text-lg font-bold">株式会社CENTENARYが貴社の「右腕」として、<br>工事のあらゆる課題を一元的に解決し、貴社の成長と利益向上に貢献します。</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 選ばれる3つの理由 -->
+        <section class="py-16 md:py-24 bg-white fade-in">
+            <div class="container mx-auto px-6 text-center">
+                <h3 class="text-2xl md:text-3xl font-bold mb-4">CENTENARYが選ばれる3つの理由</h3>
+                <p class="text-gray-600 mb-12">単なる設備工事業者ではありません。貴社の成長と利益向上に直結する価値を提供します。</p>
+
+                <div class="grid md:grid-cols-3 gap-8 text-left">
+                    <!-- VALUE 01 -->
+                    <div class="card-hover bg-gray-50 p-8 rounded-lg shadow-sm border-t-4 border-blue-600 transition duration-300">
+                        <span class="text-blue-600 font-bold">VALUE 01</span>
+                        <h4 class="font-bold text-xl my-2">時間創出とストレス削減</h4>
+                        <p class="text-gray-600 mb-4 font-semibold">本来の業務に集中できる環境を</p>
+                        <h5 class="font-bold text-md mb-2 border-b pb-1">＜具体的な効果＞</h5>
+                        <ul class="list-disc list-outside pl-5 text-gray-600 space-y-1 text-sm">
+                            <li>業者調整の一元化で調整工数を削減</li>
+                            <li>複雑な打ち合わせを代行</li>
+                            <li>技術的な判断、業務をサポート</li>
+                            <li>緊急対応時の問題解決</li>
+                        </ul>
+                    </div>
+                    <!-- VALUE 02 -->
+                    <div class="card-hover bg-gray-50 p-8 rounded-lg shadow-sm border-t-4 border-blue-600 transition duration-300">
+                        <span class="text-blue-600 font-bold">VALUE 02</span>
+                        <h4 class="font-bold text-xl my-2">無駄なコストの排除と利益最大化</h4>
+                        <p class="text-gray-600 mb-4 font-semibold">設備工事で差別化と利益向上を</p>
+                        <h5 class="font-bold text-md mb-2 border-b pb-1">＜具体的な効果＞</h5>
+                        <ul class="list-disc list-outside pl-5 text-gray-600 space-y-1 text-sm">
+                            <li>設計段階でのコスト最適化提案</li>
+                            <li>付加価値提案による差別化支援</li>
+                            <li>無駄な工程・材料費の削減</li>
+                            <li>提案力向上による受注率・利益率UP</li>
+                        </ul>
+                    </div>
+                    <!-- VALUE 03 -->
+                    <div class="card-hover bg-gray-50 p-8 rounded-lg shadow-sm border-t-4 border-blue-600 transition duration-300">
+                        <span class="text-blue-600 font-bold">VALUE 03</span>
+                        <h4 class="font-bold text-xl my-2">「不可能」を「可能」にする課題解決力</h4>
+                        <p class="text-gray-600 mb-4 font-semibold">他社が敬遠する案件こそ得意分野</p>
+                        <h5 class="font-bold text-md mb-2 border-b pb-1">＜具体的な効果＞</h5>
+                        <ul class="list-disc list-outside pl-5 text-gray-600 space-y-1 text-sm">
+                            <li>他社が敬遠する複雑な工事への対応</li>
+                            <li>部門間連携が必要な高難度プロジェクトの実現</li>
+                            <li>制約条件が多い案件での創造的解決策</li>
+                            <li>「できない」を「できる」に変える提案力</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- サービス・得意分野 -->
+        <section class="py-16 md:py-24 service-bg fade-in">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h3 class="text-2xl md:text-3xl font-bold mb-4">サービス・得意分野</h3>
+                    <p class="text-gray-700 font-semibold">電気、空調設備工事から建設業サポートまで、幅広いソリューションでお客様のニーズにお応えします。</p>
+                </div>
+                <!-- 得意分野 -->
+                <div class="mb-16">
+                    <h4 class="text-xl font-bold text-center mb-8">特に得意とする分野</h4>
+                    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto text-left">
+                        <!-- 美容室・エステサロン -->
+                        <div class="bg-blue-600 text-white p-8 rounded-lg shadow-lg">
+                            <h5 class="text-xl font-bold text-center mb-3">美容室・エステサロン</h5>
+                            <p class="text-blue-100 mb-4 text-left text-sm font-semibold">特殊な電気・空調要件に対応した専門設計・施工</p>
+                            <ul class="list-disc list-outside pl-5 text-blue-50 space-y-2">
+                                <li>高出力機器対応</li>
+                                <li>快適空調環境</li>
+                                <li>省エネ設計</li>
+                            </ul>
+                        </div>
+                        <!-- デンタルクリニック -->
+                        <div class="bg-blue-600 text-white p-8 rounded-lg shadow-lg">
+                            <h5 class="text-xl font-bold text-center mb-3">デンタルクリニック</h5>
+                            <p class="text-blue-100 mb-4 text-left text-sm font-semibold">医療機器に対応した高品質な電気・空調設備</p>
+                            <ul class="list-disc list-outside pl-5 text-blue-50 space-y-2">
+                                <li>医療機器専用電源</li>
+                                <li>清潔な空調システム</li>
+                                <li>停電対策</li>
+                            </ul>
+                        </div>
+                        <!-- オフィス・商業施設 -->
+                        <div class="bg-blue-600 text-white p-8 rounded-lg shadow-lg">
+                            <h5 class="text-xl font-bold text-center mb-3">オフィス・商業施設</h5>
+                            <p class="text-blue-100 mb-4 text-left text-sm font-semibold">快適性と省エネを両立した最新設備の導入</p>
+                            <ul class="list-disc list-outside pl-5 text-blue-50 space-y-2">
+                                <li>IoT対応設備</li>
+                                <li>エネルギー管理</li>
+                                <li>メンテナンス性重視</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- 主な実績 -->
+                    <div class="mt-16">
+                        <h4 class="text-xl font-bold text-center mb-8">主な実績</h4>
+                        <div class="max-w-6xl mx-auto">
+                            <!-- 2025年 -->
+                            <h5 class="text-lg font-bold my-4">2025年</h5>
+                            <div class="overflow-x-auto relative shadow-md sm:rounded-lg">
+                                <table class="w-full text-sm text-left text-gray-700">
+                                    <thead class="text-xs text-gray-800 uppercase bg-gray-200">
+                                        <tr>
+                                            <th scope="col" class="py-3 px-6">案件名</th>
+                                            <th scope="col" class="py-3 px-6">規模</th>
+                                            <th scope="col" class="py-3 px-6">工事内容</th>
+                                            <th scope="col" class="py-3 px-6">備考</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="bg-white border-b">
+                                            <td class="py-4 px-6">永代橋-飲食店</td>
+                                            <td class="py-4 px-6">21坪</td>
+                                            <td class="py-4 px-6">電気設計・施工</td>
+                                            <td class="py-4 px-6">解体作業から、厨房設備あり</td>
+                                        </tr>
+                                        <tr class="bg-gray-50 border-b">
+                                            <td class="py-4 px-6">戸越銀座-格闘技ジム</td>
+                                            <td class="py-4 px-6">24坪</td>
+                                            <td class="py-4 px-6">電気設計・施工</td>
+                                            <td class="py-4 px-6">-</td>
+                                        </tr>
+                                        <tr class="bg-white border-b">
+                                            <td class="py-4 px-6">板橋-内科クリニック</td>
+                                            <td class="py-4 px-6">60坪</td>
+                                            <td class="py-4 px-6">電気施工</td>
+                                            <td class="py-4 px-6">レントゲン</td>
+                                        </tr>
+                                        <tr class="bg-gray-50 border-b">
+                                            <td class="py-4 px-6">たまプラーザ-デンタル</td>
+                                            <td class="py-4 px-6">25坪</td>
+                                            <td class="py-4 px-6">電気施工</td>
+                                            <td class="py-4 px-6">3ユニット（将来用2ユニット）</td>
+                                        </tr>
+                                        <tr class="bg-white border-b">
+                                            <td class="py-4 px-6">平塚-デンタル</td>
+                                            <td class="py-4 px-6">27坪</td>
+                                            <td class="py-4 px-6">電気施工</td>
+                                            <td class="py-4 px-6">6ユニット</td>
+                                        </tr>
+                                        <tr class="bg-gray-50 border-b">
+                                            <td class="py-4 px-6">目黒-フィットネスジム</td>
+                                            <td class="py-4 px-6">200坪</td>
+                                            <td class="py-4 px-6">電気施工</td>
+                                            <td class="py-4 px-6">シュミレーションゴルフ、サウナ、有酸素、フリーウエイトetc</td>
+                                        </tr>
+                                        <tr class="bg-white">
+                                            <td class="py-4 px-6">世田谷-デンタル</td>
+                                            <td class="py-4 px-6">計66坪</td>
+                                            <td class="py-4 px-6">電気施工</td>
+                                            <td class="py-4 px-6">B1Fスタッフルーム他、2F→4ユニット</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- 2024年 -->
+                            <h5 class="text-lg font-bold my-4 mt-8">2024年</h5>
+                            <div class="overflow-x-auto relative shadow-md sm:rounded-lg">
+                                <table class="w-full text-sm text-left text-gray-700">
+                                    <thead class="text-xs text-gray-800 uppercase bg-gray-200">
+                                        <tr>
+                                            <th scope="col" class="py-3 px-6">案件名</th>
+                                            <th scope="col" class="py-3 px-6">規模</th>
+                                            <th scope="col" class="py-3 px-6">工事内容</th>
+                                            <th scope="col" class="py-3 px-6">備考</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="bg-white border-b">
+                                            <td class="py-4 px-6">葛西-美容室</td>
+                                            <td class="py-4 px-6">21坪</td>
+                                            <td class="py-4 px-6">空調・電気設計施工</td>
+                                            <td class="py-4 px-6">8席、本工事に加え、照明・空調プランニングも担当</td>
+                                        </tr>
+                                        <tr class="bg-gray-50 border-b">
+                                            <td class="py-4 px-6">新小岩-自社サロン</td>
+                                            <td class="py-4 px-6">24坪</td>
+                                            <td class="py-4 px-6">内装・設備設計施工</td>
+                                            <td class="py-4 px-6">まつ毛、ネイル、エステ、受付スペース、全て担当</td>
+                                        </tr>
+                                        <tr class="bg-white border-b">
+                                            <td class="py-4 px-6">港区-クリニック兼ジム</td>
+                                            <td class="py-4 px-6">2フロア147坪</td>
+                                            <td class="py-4 px-6">-</td>
+                                            <td class="py-4 px-6">クリニック将来用レントゲン、骨密度室</td>
+                                        </tr>
+                                         <tr class="bg-gray-50 border-b">
+                                            <td class="py-4 px-6">小田原-デンタル</td>
+                                            <td class="py-4 px-6">29坪</td>
+                                            <td class="py-4 px-6">電気施工</td>
+                                            <td class="py-4 px-6">4ユニット</td>
+                                        </tr>
+                                        <tr class="bg-white border-b">
+                                            <td class="py-4 px-6">北千住-美容室</td>
+                                            <td class="py-4 px-6">35坪</td>
+                                            <td class="py-4 px-6">電気・空調設計施工</td>
+                                            <td class="py-4 px-6">12席、空調プランニング、天井ライトバー交差施工</td>
+                                        </tr>
+                                        <tr class="bg-gray-50 border-b">
+                                            <td class="py-4 px-6">用賀-クリニック</td>
+                                            <td class="py-4 px-6">60坪</td>
+                                            <td class="py-4 px-6">電気施工</td>
+                                            <td class="py-4 px-6">弱電配管に伴う調整作業</td>
+                                        </tr>
+                                        <tr class="bg-white border-b">
+                                            <td class="py-4 px-6">港区-バー</td>
+                                            <td class="py-4 px-6">12坪</td>
+                                            <td class="py-4 px-6">電気施工</td>
+                                            <td class="py-4 px-6">間接照明選定、詳細ディテール調整、自火報設備</td>
+                                        </tr>
+                                        <tr class="bg-gray-50 border-b">
+                                            <td class="py-4 px-6">用賀-格闘技ジム</td>
+                                            <td class="py-4 px-6">計45坪</td>
+                                            <td class="py-4 px-6">電気設計施工</td>
+                                            <td class="py-4 px-6">容量アップに伴う東電申請、メーター設置作業</td>
+                                        </tr>
+                                        <tr class="bg-white border-b">
+                                            <td class="py-4 px-6">渋谷本町-クリニック</td>
+                                            <td class="py-4 px-6">57坪</td>
+                                            <td class="py-4 px-6">電気施工</td>
+                                            <td class="py-4 px-6">-</td>
+                                        </tr>
+                                        <tr class="bg-gray-50 border-b">
+                                            <td class="py-4 px-6">西川口-薬局</td>
+                                            <td class="py-4 px-6">23坪</td>
+                                            <td class="py-4 px-6">電気施工</td>
+                                            <td class="py-4 px-6">-</td>
+                                        </tr>
+                                        <tr class="bg-white border-b">
+                                            <td class="py-4 px-6">久里浜-薬局</td>
+                                            <td class="py-4 px-6">36坪</td>
+                                            <td class="py-4 px-6">電気施工</td>
+                                            <td class="py-4 px-6">-</td>
+                                        </tr>
+                                        <tr class="bg-gray-50 border-b">
+                                            <td class="py-4 px-6">久里浜-クリニック</td>
+                                            <td class="py-4 px-6">39坪</td>
+                                            <td class="py-4 px-6">電気施工</td>
+                                            <td class="py-4 px-6">レントゲン室</td>
+                                        </tr>
+                                        <tr class="bg-white border-b">
+                                            <td class="py-4 px-6">方南町-デンタル</td>
+                                            <td class="py-4 px-6">31坪</td>
+                                            <td class="py-4 px-6">電気施工</td>
+                                            <td class="py-4 px-6">5ユニット</td>
+                                        </tr>
+                                        <tr class="bg-gray-50">
+                                            <td class="py-4 px-6">新横浜-オフィス</td>
+                                            <td class="py-4 px-6">180坪4フロア</td>
+                                            <td class="py-4 px-6">電源工事</td>
+                                            <td class="py-4 px-6">移転に伴うOA配線工事</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- 2023年 -->
+                            <h5 class="text-lg font-bold my-4 mt-8">2023年</h5>
+                             <div class="overflow-x-auto relative shadow-md sm:rounded-lg">
+                                <table class="w-full text-sm text-left text-gray-700">
+                                    <thead class="text-xs text-gray-800 uppercase bg-gray-200">
+                                        <tr>
+                                            <th scope="col" class="py-3 px-6">案件名</th>
+                                            <th scope="col" class="py-3 px-6">規模</th>
+                                            <th scope="col" class="py-3 px-6">工事内容</th>
+                                            <th scope="col" class="py-3 px-6">備考</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="bg-white border-b">
+                                            <td class="py-4 px-6">半蔵門-オフィス</td>
+                                            <td class="py-4 px-6">20坪</td>
+                                            <td class="py-4 px-6">電気施工</td>
+                                            <td class="py-4 px-6">大型モニター設置、OA配線</td>
+                                        </tr>
+                                        <tr class="bg-gray-50 border-b">
+                                            <td class="py-4 px-6">六本木-バー</td>
+                                            <td class="py-4 px-6">-</td>
+                                            <td class="py-4 px-6">電気施工</td>
+                                            <td class="py-4 px-6">天高低く、配管・配線作業が困難</td>
+                                        </tr>
+                                        <tr class="bg-white border-b">
+                                            <td class="py-4 px-6">小伝馬町-オフィス</td>
+                                            <td class="py-4 px-6">160坪</td>
+                                            <td class="py-4 px-6">電気施工</td>
+                                            <td class="py-4 px-6">原状回復に伴う照明器具交換工事（約100台）</td>
+                                        </tr>
+                                        <tr class="bg-gray-50 border-b">
+                                            <td class="py-4 px-6">北参道-デンタルクリニック</td>
+                                            <td class="py-4 px-6">25坪</td>
+                                            <td class="py-4 px-6">電気施工</td>
+                                            <td class="py-4 px-6">5ユニット、カリーナ、マイクロ</td>
+                                        </tr>
+                                        <tr class="bg-white">
+                                            <td class="py-4 px-6">銀座-オフィス</td>
+                                            <td class="py-4 px-6">60坪</td>
+                                            <td class="py-4 px-6">電気施工</td>
+                                            <td class="py-4 px-6">大型スクリーン設置、OA配線工事</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- 2022年 -->
+                            <h5 class="text-lg font-bold my-4 mt-8">2022年</h5>
+                            <div class="overflow-x-auto relative shadow-md sm:rounded-lg">
+                                <table class="w-full text-sm text-left text-gray-700">
+                                    <thead class="text-xs text-gray-800 uppercase bg-gray-200">
+                                        <tr>
+                                            <th scope="col" class="py-3 px-6">案件名</th>
+                                            <th scope="col" class="py-3 px-6">規模</th>
+                                            <th scope="col" class="py-3 px-6">工事内容</th>
+                                            <th scope="col" class="py-3 px-6">備考</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="bg-white border-b">
+                                            <td class="py-4 px-6">人形町-美容室</td>
+                                            <td class="py-4 px-6">28坪</td>
+                                            <td class="py-4 px-6">空調・電気設計施工</td>
+                                            <td class="py-4 px-6">9席、照明・空調プランニングも担当</td>
+                                        </tr>
+                                        <tr class="bg-gray-50 border-b">
+                                            <td class="py-4 px-6">東芝ビル-オフィス</td>
+                                            <td class="py-4 px-6">196坪</td>
+                                            <td class="py-4 px-6">電気施工</td>
+                                            <td class="py-4 px-6">床コンセント工事、LAN配線</td>
+                                        </tr>
+                                        <tr class="bg-white border-b">
+                                            <td class="py-4 px-6">原宿-オフィス</td>
+                                            <td class="py-4 px-6">47坪</td>
+                                            <td class="py-4 px-6">電気設計施工</td>
+                                            <td class="py-4 px-6">オフィス内ラック設置、露出配管でおしゃれな仕上がり</td>
+                                        </tr>
+                                        <tr class="bg-gray-50">
+                                            <td class="py-4 px-6">稲毛-マンション</td>
+                                            <td class="py-4 px-6">21坪2LDK</td>
+                                            <td class="py-4 px-6">リノベ電気施工</td>
+                                            <td class="py-4 px-6">フルリノベ案件、3路・4路回路など細かく対応</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                             <!-- 2021年 -->
+                            <h5 class="text-lg font-bold my-4 mt-8">2021年</h5>
+                             <div class="overflow-x-auto relative shadow-md sm:rounded-lg">
+                                <table class="w-full text-sm text-left text-gray-700">
+                                    <thead class="text-xs text-gray-800 uppercase bg-gray-200">
+                                        <tr>
+                                            <th scope="col" class="py-3 px-6">案件名</th>
+                                            <th scope="col" class="py-3 px-6">規模</th>
+                                            <th scope="col" class="py-3 px-6">工事内容</th>
+                                            <th scope="col" class="py-3 px-6">備考</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="bg-white border-b">
+                                            <td class="py-4 px-6">錦糸町-美容室</td>
+                                            <td class="py-4 px-6">30坪</td>
+                                            <td class="py-4 px-6">空調・電気設計施工</td>
+                                            <td class="py-4 px-6">10席、照明・空調プランニングも担当</td>
+                                        </tr>
+                                        <tr class="bg-gray-50 border-b">
+                                            <td class="py-4 px-6">エドグラン-電動ブラインド</td>
+                                            <td class="py-4 px-6">2フロア</td>
+                                            <td class="py-4 px-6">配線工事</td>
+                                            <td class="py-4 px-6">スイッチ位置変更に伴う配線工事、主にLAN配線</td>
+                                        </tr>
+                                        <tr class="bg-white border-b">
+                                            <td class="py-4 px-6">大田区-アパート</td>
+                                            <td class="py-4 px-6">18戸</td>
+                                            <td class="py-4 px-6">IOT機器設置工事</td>
+                                            <td class="py-4 px-6">IOTインターホン入れ替え、配管工事、LAN配線等</td>
+                                        </tr>
+                                        <tr class="bg-gray-50 border-b">
+                                            <td class="py-4 px-6">東向島-オフィス</td>
+                                            <td class="py-4 px-6">20坪</td>
+                                            <td class="py-4 px-6">空調・電気設計施工</td>
+                                            <td class="py-4 px-6">スケルトン天井、ハイダク施工、助成金申請作業も</td>
+                                        </tr>
+                                        <tr class="bg-white">
+                                            <td class="py-4 px-6">蔵前-オフィス</td>
+                                            <td class="py-4 px-6">40坪, 75坪</td>
+                                            <td class="py-4 px-6">電気施工</td>
+                                            <td class="py-4 px-6">2フロア同時施工、プロジェクター設置、OAフロア配線</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- サービス範囲 -->
+                <div>
+                     <h4 class="text-xl font-bold text-center mb-8 mt-16">対応サービス範囲</h4>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left max-w-6xl mx-auto">
+                        <div class="card-hover bg-blue-600 text-white border-transparent rounded-lg hover:shadow-lg transition duration-300 p-6">
+                            <h5 class="font-bold text-xl mb-4 text-center">電気設備設計・施工</h5>
+                            <ul class="list-disc list-outside pl-5 text-blue-100 space-y-2">
+                                <li>受変電設備工事</li>
+                                <li>動力・電灯設備工事</li>
+                                <li>弱電・防災設備工事</li>
+                                <li>LED照明工事</li>
+                                <li>太陽光発電設備</li>
+                            </ul>
+                        </div>
+                        <div class="card-hover bg-blue-600 text-white border-transparent rounded-lg hover:shadow-lg transition duration-300 p-6">
+                            <h5 class="font-bold text-xl mb-4 text-center">空調設備設計・施工</h5>
+                            <ul class="list-disc list-outside pl-5 text-blue-100 space-y-2">
+                                <li>業務用エアコン工事</li>
+                                <li>換気・衛生設備工事</li>
+                                <li>給排水設備工事</li>
+                                <li>省エネ改修工事</li>
+                                <li>メンテナンス</li>
+                            </ul>
+                        </div>
+                        <div class="card-hover bg-blue-600 text-white border-transparent rounded-lg hover:shadow-lg transition duration-300 p-6">
+                            <h5 class="font-bold text-xl mb-4 text-center">建設業サポート事業</h5>
+                            <ul class="list-disc list-outside pl-5 text-blue-100 space-y-2">
+                                <li>ヒアリング経営診断</li>
+                                <li>事業戦略サポート</li>
+                                <li>アドバイザリー提携</li>
+                                <li>人材育成支援</li>
+                                <li>業務効率化・新規事業計画</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 出版書籍 -->
+        <section class="py-16 md:py-24 bg-white fade-in">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h3 class="text-2xl md:text-3xl font-bold mb-4">出版書籍</h3>
+                </div>
+                <div class="max-w-4xl mx-auto bg-gray-50 p-8 rounded-lg shadow-md flex flex-col md:flex-row items-center gap-8">
+                    <div class="md:w-2/3 text-center md:text-left">
+                        <h4 class="text-xl font-bold mb-2">電子書籍出版</h4>
+                        <p class="text-2xl font-bold text-blue-600 mb-4">「初心者でも絶対できる見積作成」超入門</p>
+                        <p class="text-gray-600">建設業界の見積作成ノウハウを体系化し、多くの企業様にご活用いただいています。</p>
+                    </div>
+                    <div class="md:w-1/3">
+                        <!-- ↓↓↓ お客様のローカル画像パスに書き換えてください ↓↓↓ -->
+                        <img src="images/book-cover.jpg" alt="「初心者でも絶対できる見積作成」超入門 表紙" class="rounded-md shadow-lg mx-auto">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- お問い合わせ -->
+        <section id="contact" class="py-16 md:py-24 bg-gray-800 text-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center">
+                    <h3 class="text-2xl md:text-3xl font-bold mb-4">お問い合わせ</h3>
+                    <p class="max-w-3xl mx-auto text-gray-300 mb-8">プロジェクトのご相談、お見積もりのご依頼は、<br>下記のボタンよりお問い合わせフォームへお進みください。</p>
+                    <!-- この下のhref="#"を、ご自身のGoogleフォームのURLに書き換えてください -->
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="bg-blue-600 text-white font-bold py-4 px-10 rounded-lg hover:bg-blue-700 transition duration-300 inline-block text-lg">
+                        お問い合わせフォームへ
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- フッター -->
+        <footer class="bg-gray-900 text-white py-12">
+            <div class="container mx-auto px-6 text-center">
+                <h4 class="text-xl font-bold mb-4">株式会社CENTENARY</h4>
+                <p class="mb-2">〒123-4567 東京都渋谷区〇〇 1-2-3</p>
+                <p class="mb-4">TEL: 03-1234-5678</p>
+                <p class="text-gray-400 text-sm">&copy; 2024 株式会社CENTENARY. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+    </main>
+    <script>
+        // スクロール時のフェードイン処理
+        const faders = document.querySelectorAll('.fade-in');
+        const appearOptions = {
+            threshold: 0.2, // 要素が20%見えたら表示
+            rootMargin: "0px 0px -50px 0px" // 少し早めに表示
+        };
+
+        const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                } else {
+                    entry.target.classList.add('visible');
+                    appearOnScroll.unobserve(entry.target);
+                }
+            });
+        }, appearOptions);
+
+        faders.forEach(fader => {
+            appearOnScroll.observe(fader);
+        });
+    </script>
+</body>
+</html>
